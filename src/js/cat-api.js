@@ -5,7 +5,7 @@ axios.defaults.headers.common['x-api-key'] =
 
 const URL = 'https://api.thecatapi.com/v1';
 
-function fetchBrreds() {
+function fetchBreeds() {
     const breeds = `${URL}/breeds`
     return fetch(breeds, axios).then(response => {
         if (!response.ok) {
@@ -23,4 +23,4 @@ function fetchCatByBreed(breedId) {
     });
 }
 
-export { fetchBrreds, fetchCatByBreed };
+export { fetchBreeds, fetchCatByBreed };
