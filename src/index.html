@@ -4,27 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>catSearch_v2</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <select class="breed-select"></select>
-    <p class="loader is-hidden">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
-
-    <script src="./js/index.js" type="module"></script>
+    <span class="loader is-hidden"></span>
+    <!-- <p class="loader is-hidden">Loading data, please wait...</p> -->
+    <p class="error is-hidden">Oops! Something went wrong! Try reloading the page!</p>
+    <div class="cat-info is-hidden"></div>
+<script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
