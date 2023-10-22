@@ -20,13 +20,11 @@ loader.classList.toggle('is-hidden');
 
 let arrBreedsId = [];
 fetchBreeds()
-  .then(data => {
-    data.forEach(element => {
-      arrBreedsId.push({ text: element.name, value: element.id });
-    });
-  })
-    .then(onSelect)
-    .catch(onError);
+  .then(data.forEach(element => {
+    arrBreedsId.push({ text: element.name, value: element.id });
+  }))
+  .then(onSelect)
+  .catch(onError);
 
   
     select.addEventListener('change', onChangeBreed);
