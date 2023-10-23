@@ -13,10 +13,11 @@ axios.defaults.headers.common['x-api-key'] =
 // };
 
 function fetchBreeds() {
-  console.log(axios('/breeds'));
-  return axios('/breeds').data
+  // return axios('/breeds').then(data => data.forEach(element => {
+  //   arrayBreedsId.push({ text: element.name, id: element.value })
+  // }))
  
-  // return axios('/breeds').data
+  return axios('/breeds')
   // {
   //   if (response.ok) {
   //     return response.json();
